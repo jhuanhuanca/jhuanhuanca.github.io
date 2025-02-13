@@ -202,3 +202,10 @@
 
 </body>
 </html>
+<script>
+    setInterval(() => {
+        if (window.outerHeight - window.innerHeight > 200 || window.outerWidth - window.innerWidth > 200) {
+            document.body.innerHTML = "Acceso denegado";
+        }
+    }, 1000);
+</script>
